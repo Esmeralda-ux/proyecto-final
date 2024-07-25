@@ -1,0 +1,202 @@
+.contenedor-header{
+    display: grid;
+    grid-template-areas: ".  titulo  contenedor";
+    background-color: aquamarine;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+h1{
+    grid-area: titulo;
+    border: px solid blue;
+    font-size: 80px;
+
+}
+.contenedor-busqueda-redes{
+    grid-area: contenedor;
+    border: 2px ;
+    display: flex;
+    align-items: center;
+}
+.redes{
+    font-size: 30px;
+    margin: 20px;
+    
+}
+#busqueda{
+    padding: 14px;
+    border-radius: 15px 0px 0px 15px;
+
+}
+button{
+padding: 14px;
+}
+form{
+    display: flex;
+}
+nav{
+    font-size: 30px;
+    padding: 20px 150px 20px 150px;
+    
+    background-color: cadetblue;
+    justify-content: space-around ;
+    border: 2px solid;
+    display: flex;
+
+}
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+/*cambia el estilo solo si el cursor esta sobre la eqtiqueta*/
+nav a:hover{
+    color: brown;
+}
+.hero{
+    border: 2px solid;
+
+    color: aliceblue;
+  
+   
+    text-align: center;
+    font-size: 40px;
+    
+background-image: url(tunel.jpg); 
+background-repeat: no-repeat;
+background-size:cover ;
+padding: 70px;
+}
+.hero h2, .hero p{
+    width: 70%;
+    margin: auto;
+  
+}
+/*estilos seccion recomendaciones*/
+
+.libro-img{
+    width: 250px;
+    height: 350px;
+}
+.libro-img img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+  
+}
+.contenedor-libro-recomendaciones{
+    display: flex;
+    justify-content: space-around;
+}
+.libros-recomendados{
+    padding: 400px;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card__boton{
+background-color: red;
+color: white;
+text-decoration:none ;
+border-radius:10px ;
+padding: 12px 20px;
+text-transform: uppercase;
+}
+/*solo si el cursor se encuentra arriba del botón o elemento"*/
+.card:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    box-shadow: 10px 10px 10px grey;
+    transition: 1s;
+    padding: 20px;
+
+}
+.cont-libros{
+    display: flex;
+    overflow-x:scroll ;
+    height: 800px;
+
+}
+.card-libros{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card-precio-boton{
+    display: flex;
+}
+.card__precio{
+    color: red;
+
+}
+.conocenos{
+    display: flex;
+    
+}
+.conocenos-img{
+    width: 50%;
+    padding: 40px;
+}
+.conocenos-texto{
+    width: 50%;
+    padding: 40px;
+    
+
+}
+.conocenos-img img{
+    width: 100%;
+    padding: 10px 10px 10px;
+    
+
+    
+
+}
+.centrar{
+    text-align: center;
+    color: red;
+}
+.h21{
+    color: red;
+}
+.h22{
+    color: red;
+}
+/*estilos footer*/
+footer{
+    background-color: burlywood;
+    padding: 60px;
+    display: grid;
+    
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 60px;
+}
+footer section{
+    border: 2px;
+    padding-bottom: 18px;
+}
+.copy{
+    grid-column: 1/4;
+    text-align: center;
+}
+footer section h2{
+    border-bottom: 4px solid white ;
+   
+    
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer ul li{
+    margin-bottom: 18px;
+}
+.correo{
+    padding: 16px;
+}
+.booton-enviar{
+    background-color: red;
+}
