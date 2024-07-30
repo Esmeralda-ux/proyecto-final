@@ -88,7 +88,7 @@ button{
 }
 .conocenos{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     
 }
 .conocenos-img{
