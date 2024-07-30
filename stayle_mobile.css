@@ -135,7 +135,7 @@ footer{
 /*estilos para tablet*/
 @media (min-width:400px) {
     .contenedor-header{
-       grid-template-areas: ". titulo";
+       grid-template-areas: ". titulo contenedor";
     }
     h1{
         font-size: 80px;
@@ -145,8 +145,20 @@ footer{
         display: flex;
         align-items: center;   
     }
+    h1{
+        grid-area: titulo;
+        border: px solid blue;
+        font-size: 80px;
     
-}
+    }
+    .contenedor-busqueda-redes{
+        grid-area: contenedor;
+        border: 2px ;
+        display: flex;
+        align-items: center;
+    }
+    
+
 .hero{
     border: 2px solid;
 
@@ -161,16 +173,42 @@ background-repeat: no-repeat;
 background-size:cover ;
 padding: 10px;
 }
-
+}
 /*estio para escritorio*/
 @media (min-width:900px) {
     .contenedor-header{
-        grid-template-areas: ". titulo";
+        grid-template-areas: ". titulo contenedor";
     }
     
-}
+
 h1{
+    grid-area: titulo;
     font-size: 80px;
+}
+.contenedor-busqueda-redes{
+    grid-area: contenedor;
+    border: 2px ;
+    display: flex;
+
+    flex-direction: row;
+
+    border: 2px solid;
+}
+.redes{
+    font-size: 30px;
+    margin: 20px;
+    
+}
+#busqueda{
+    padding: 14px;
+    border-radius: 15px 0px 0px 15px;
+
+}
+button{
+padding: 14px;
+}
+form{
+    display: flex;
 }
 
 main img{
@@ -211,4 +249,16 @@ footer ul li{
 .copy{
     grid-column: 1/4;
     text-align: center;
+}
+.card-libros{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contenedor-libro-recomendaciones{
+ 
+    justify-content: space-between;
+}
 }
