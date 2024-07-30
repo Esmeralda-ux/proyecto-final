@@ -94,7 +94,7 @@ button{
 .conocenos-img{
     width: 300px;
     padding: 40px;
-    flex-grow: 1 ;
+    flex-grow: 3;
 }
 .conocenos-texto{
     width: 300px;
@@ -106,6 +106,9 @@ button{
 .centrar{
     text-align: center;
 
+}
+.conocenos-img img{
+    width: 100%;
 }
 
 footer{
