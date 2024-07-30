@@ -1,0 +1,211 @@
+/*estilo para celulares*/
+.contenedor-header {
+    display: grid;
+    grid-template-areas: "titulo"
+        "cont";
+    background-color: rgba(242, 198, 167, 0.913);
+    justify-items: center;
+}
+
+h1 {
+    grid-area: titulo;
+    font-size: 50px;
+    border: px solid blue;
+}
+
+.contenedor-busqueda-redes{
+    grid-area: cont;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes{
+    font-size: 25px;
+    margin: 1em 30px;
+
+    
+}
+
+#busqueda{
+    padding: 0.7em;
+    border-radius: 15px 0px 0px 15px;
+
+}
+button{
+    padding: 0.7em;
+    }
+    form{
+        display: flex;
+    }
+
+    nav{
+        font-size: 14px;
+        padding: 10px;
+        
+        background-color: cadetblue;
+        justify-content: space-around ;
+        border: 2px solid;
+        display: flex;
+    
+    }
+    nav a{
+        color: aliceblue;
+        text-decoration: none;
+        
+    }
+    nav a:hover{
+        color: brown;
+    }
+    /*estilos seccion recomendaciones*/
+
+.libro-img{
+    width: 270px;
+    
+}
+.contenedor-libro-recomendaciones{
+    display: flex;
+    overflow-x: scroll;
+}
+.libros-recomendados{
+    padding: 10px;
+
+}
+.card-libros{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card-precio-boton{
+    display: flex;
+}
+.card-precio{
+    margin-right: 20px;
+}
+.conocenos{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.conocenos-img{
+    width: 300px;
+    padding: 40px;
+    flex-grow: 1 ;
+}
+.conocenos-texto{
+    width: 300px;
+    padding: 40px;
+    flex-grow: 1;
+    
+
+}
+.centrar{
+    text-align: center;
+
+}
+
+footer{
+    background-color: plum;
+    padding: 60px;
+    
+}
+.footer li{
+    margin: 20px 0;
+}
+.card__boton{
+    background-color: red;
+    color: white;
+    text-decoration:none ;
+    border-radius:10px ;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    }
+    .cont-libros{
+        display: flex;
+        overflow-x:scroll ;
+        
+    }
+/*estilos para tablet*/
+@media (min-width:400px) {
+    .contenedor-header{
+       grid-template-areas: ". titulo";
+    }
+    h1{
+        font-size: 80px;
+    }
+    .contenedor-busqueda-redes{
+    
+        display: flex;
+        align-items: center;   
+    }
+    
+}
+.hero{
+    border: 2px solid;
+
+    color: aliceblue;
+  
+   
+    text-align: center;
+    font-size: 35px;
+    
+background-image: url(tunel.jpg); 
+background-repeat: no-repeat;
+background-size:cover ;
+padding: 10px;
+}
+
+/*estio para escritorio*/
+@media (min-width:900px) {
+    .contenedor-header{
+        grid-template-areas: ". titulo";
+    }
+    
+}
+h1{
+    font-size: 80px;
+}
+
+main img{
+    width: 200px;
+}
+
+.hero{
+    font-size: 35px;
+    padding: 80px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/*solo si el cursor se encuentra arriba del botón o elemento"*/
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px grey;
+
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer ul li{
+    margin-bottom: 18px;
+}
+.correo{
+    padding: 16px;
+}
+.booton-enviar{
+    background-color: red;
+}
+.copy{
+    grid-column: 1/4;
+    text-align: center;
+}
